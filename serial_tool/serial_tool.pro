@@ -17,13 +17,17 @@ SOURCES += main.cpp\
     qextserialport_win.cpp \
     qextserialport.cpp \
     cmd.cpp \
-    config.cpp
+    config.cpp \
+    crc.cpp \
+    protocol.cpp
 
 HEADERS  += serial_tool.h \
     myhelper.h \
     qextserialport_p.h \
     qextserialport_global.h \
     qextserialport.h \
-    cmd.h
+    cmd.h \
+    crc.h \
+    protocol.h
 
 FORMS    += serial_tool.ui

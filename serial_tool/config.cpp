@@ -25,6 +25,7 @@ void serial_tool::get_cmd_info(QString cmd_name)
         if(cmd_name == cmd_list)
             {
             cmd_info = data.split(":")[1];
+            cmd_info = cmd_info.split('\n')[0];
             ui->cmd_info->setText(cmd_info);
             break;
             }
